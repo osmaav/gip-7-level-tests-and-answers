@@ -1,210 +1,189 @@
+
 @charset "utf-8";
 .ui-corner-all {
-  border-radius: 6px;
-  margin: 5px 0px 5px 3px;
+ border-radius: 6px;
+ margin: 5px 0px 5px 3px;
 }
 
 * {
-  margin: 0;
-  padding: 0
+ margin: 0;
+ padding: 0
 }
 
 body {
-  overflow-x: hidden;
-  cursor: default;
-  min-height: 319px;
-  font-family: Verdana, Tahoma, sans-serif;
-  font-size: 14px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAMAAABFNRROAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF8/P2+fn7+/v9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdM3OVAAAAAlwSFlzAAAOwgAADsIBFShKgAAAAB90RVh0U29mdHdhcmUAUGFpbnQuTkVUID8/Pz8/PyAzLjUuNefKA2EAAAA9SURBVBhXXY7RFgAwBELj/z96qs1hXnQRgIpQUCEzyVcUkUcqLUS0kgMusyu/QXMf7cm1xZvfhXnWT/RnB0rBAN3NgamLAAAAAElFTkSuQmCC);
+ overflow-x: hidden;
+ cursor: default;
+ min-height: 319px;
+ font-family: Verdana, Tahoma, sans-serif;
+ font-size: 14px;
+ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAMAAABFNRROAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF8/P2+fn7+/v9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdM3OVAAAAAlwSFlzAAAOwgAADsIBFShKgAAAAB90RVh0U29mdHdhcmUAUGFpbnQuTkVUID8/Pz8/PyAzLjUuNefKA2EAAAA9SURBVBhXXY7RFgAwBELj/z96qs1hXnQRgIpQUCEzyVcUkUcqLUS0kgMusyu/QXMf7cm1xZvfhXnWT/RnB0rBAN3NgamLAAAAAElFTkSuQmCC);
 }
 
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
+ -webkit-appearance: none;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #528AA5;
-  border-radius: 5px;
+ background-color: #528AA5;
+ border-radius: 5px;
 }
 
 /* рамка вопроса */
 .question_sub_panel {
-  padding: 5px;
-  border: 1px solid #aed0ea
+ padding: 5px;
+ border: 1px solid #aed0ea
 }
 
 div.question_sub_panel.ui-corner-all div.question_sub_panel.ui-corner-all {
-  margin-top: 0 !important;
-  /*отступ от пояснения */
+ margin-top: 0 !important;
+ /*отступ от пояснения */
 }
 
 .answer_form>center>input[name="input_text"],
 .answer_form input.text {
-  width: 99%;
-  margin-right: 5px;
-  padding-left: 3px;
-  background-color: #dfd;
-  border: 1px solid #bbb;
-  border-radius: 3px;
+ width: 99%;
+ margin-right: 5px;
+ padding-left: 3px;
+ background-color: #dfd;
+ border: 1px solid #bbb;
+ border-radius: 3px;
 }
 
 .ftable-header {
-  font-weight: 700;
-  text-align: center;
-  background-color: #e5e9fa;
+ font-weight: 700;
+ text-align: center;
+ background-color: #e5e9fa;
 }
 
 .prompt_button {
-  margin-left: 3px;
-  width: fit-content;
-  border: 1px solid #aeaaea;
-  border-radius: 5px;
-  background-color: #f5f5ff;
-  color: #2789aa;
-  font-weight: bolder;
-  padding: 3px 5px;
-  cursor: pointer;
+ margin-left: 3px;
+ width: fit-content;
+ border: 1px solid #aeaaea;
+ border-radius: 5px;
+ background-color: #f5f5ff;
+ color: #2789aa;
+ font-weight: bolder;
+ padding: 3px 5px;
+ cursor: pointer;
 }
-
-/* .prompt_button:hover {
-      background-color: #03a9f461;
-      color: #000;
-    } */
-
-/* .prompt_button:hover::after {
-      content: 'нажми для раскрытия';
-      position: absolute;
-      left: 115px;
-      font-weight: normal;
-      font-size: 14px;
-      color: #444;
-    } */
 
 /* скрываю пояснения */
 .prompt_panel {
-  display: none;
+ display: none;
 }
 
 /* надпись правильный ответ */
 div.question_sub_panel.ui-corner-all>p[style*="green"] {
-  margin-top: 0px;
-  box-shadow: 0px 0px 3px #0004;
-  width: max-content;
-  padding: 0px 3px 1px 3px;
-  background-color: #00ff004f;
-  font-weight: bolder;
+ margin-top: 0px;
+ box-shadow: 0px 0px 3px #0004;
+ width: max-content;
+ padding: 0px 3px 1px 3px;
+ background-color: #00ff004f;
+ font-weight: bolder;
 }
 
 /* пустые абзаццы после вопроса скрываю*/
 p:has(>span >br) {
-  display: none;
+ display: none;
 }
 
 /* нечетные строки таблиц */
 tr:nth-child(odd)>td:not([class*="ftable-header"]):not([class*="rc"])
 
 /*исключая заголовки и столбцы чекбоксов и радиокнопок*/
-  {
-  background-color: #e5e9fa;
+ {
+ background-color: #e5e9fa;
 }
 
 .sortable-left-div div {
-  display: none;
+ display: none;
 }
 
 .sortable-right-div {
-  padding-left: 20px;
+ padding-left: 20px;
 }
 
 .sortable {
-  list-style: decimal;
+ list-style: decimal;
 }
 
 .ftable-header {
-  border-color: gray;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+ border-color: gray;
+ border: 1px solid #ddd;
+ border-radius: 6px;
 }
 
 table {
-  /* display: table; */
-  /* border-collapse: separate; */
-  /* box-sizing: border-box; */
-  /* text-indent: initial; */
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+ width: 100%;
+ border: 1px solid #ddd;
+ border-radius: 6px;
 }
 
 /* задаю стиль для радиокнопок и чекбоксов */
 input[type=radio][readonly],
 input[type=checkbox] {
-  accent-color: #4CAF50;
-  z-index: -1;
-  position: relative;
+ accent-color: #4CAF50;
+ z-index: -1;
+ position: relative;
 }
 
 td.rc {
-  width: 13px;
+ width: 13px;
 }
 
 #testing #t_content .fixed_rows {
-  /* border: 1px solid; */
-  /* border-collapse: collapse; */
-  /* border-width: 1px; */
-  width: 100%;
+ width: 100%;
 }
 
 #testing #t_content td.left_column {
-  /* border: 1px solid #a2c1d8; */
-  padding-left: 5px;
-  width: 50%;
+ padding-left: 5px;
+ width: 50%;
 }
 
 #testing #t_content td.right_column {
-  /* border: 1px solid #a2c1d8; */
-  padding: 1px;
-  width: 50%;
+ padding: 1px;
+ width: 50%;
 }
+
 .prompt {
-  z-index: 1;
-  cursor: pointer;
+ z-index: 1;
+ cursor: pointer;
 }
 
 .prompt_button {
-  z-index: -1;
-  margin-left: 3px;
-  width: fit-content;
-  border: 1px solid #aeaaea;
-  border-radius: 5px;
-  background-color: #f5f5ff;
-  color: #2789aa;
-  font-weight: bolder;
-  padding: 3px 5px;
-  position: relative;
+ z-index: -1;
+ margin-left: 3px;
+ width: fit-content;
+ border: 1px solid #aeaaea;
+ border-radius: 5px;
+ background-color: #f5f5ff;
+ color: #2789aa;
+ font-weight: bolder;
+ padding: 3px 5px;
+ position: relative;
 }
 
 /* делаю открытие пояснений по нажатию кнопки */
 .prompt:active .prompt_panel,
 .prompt_panel:hover {
-  border: 1px solid #aed0ea;
-  border-radius: 5px;
-  background-color: #fff;
-  padding: 5px;
-  margin-left: 3px;
-  margin-top: -28px;
-  display: block;
-  position: relative;
-  cursor: default;
+ border: 1px solid #aed0ea;
+ border-radius: 5px;
+ background-color: #fff;
+ padding: 5px;
+ margin-left: 3px;
+ margin-top: -28px;
+ display: block;
+ position: relative;
+ cursor: default;
 }
 
 /* показываю подсказку для кнопки */
 .prompt:hover .prompt_button::after {
-  content: 'нажми для раскрытия';
-  position: absolute;
-  left: 105px;
-  font-weight: normal;
-  font-size: 14px;
-  color: #4449;
-  white-space: nowrap;
+ content: 'нажми для раскрытия';
+ position: absolute;
+ left: 105px;
+ font-weight: normal;
+ font-size: 14px;
+ color: #4449;
+ white-space: nowrap;
 }

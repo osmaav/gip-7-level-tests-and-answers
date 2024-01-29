@@ -179,6 +179,9 @@ td.rc {
 
 /* включаю анимацию кнопки по наведению */
 .prompt:hover .prompt_button {
+  -webkit-animation: 1s ease-in-out 0s normal none infinite running trambling-animation;
+  -moz-animation: 1s ease-in-out 0s normal none infinite running trambling-animation;
+  -o-animation: 1s ease-in-out 0s normal none infinite running trambling-animation;
   animation: 1s ease-in-out 0s normal none infinite running trambling-animation;
 }
 
@@ -199,11 +202,17 @@ td.rc {
 
   20%,
   60% {
+    -webkit-animation: rotate(-2deg);
+    -moz-animation: rotate(-2deg);
+    -o-animation: rotate(-2deg);
     transform: rotate(-2deg);
   }
 
   40%,
   80% {
+    -webkit-animation: rotate(2deg);
+    -moz-animation: rotate(2deg);
+    -o-animation: rotate(2deg);
     transform: rotate(2deg);
   }
 }

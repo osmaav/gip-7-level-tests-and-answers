@@ -177,13 +177,20 @@ td.rc {
  cursor: default;
 }
 
+/* включаю анимацию кнопки по наведению */
+.prompt:hover .prompt_button {
+  animation: 1s ease-in-out 0s normal none infinite running trambling-animation;
+}
+
 /* показываю подсказку для кнопки */
 .prompt:hover .prompt_button::after {
- content: 'нажми для раскрытия';
- position: absolute;
- left: 105px;
- font-weight: normal;
- font-size: 14px;
- color: #4449;
- white-space: nowrap;
+  content: 'нажми для раскрытия';
+  position: absolute;
+  left: 105px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #4449;
+  white-space: nowrap;
+  animation: none;
+  /* animation: 1s ease-in-out 0s normal none infinite running trambling-animation; */
 }

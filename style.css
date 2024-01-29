@@ -194,3 +194,16 @@ td.rc {
   animation: none;
   /* animation: 1s ease-in-out 0s normal none infinite running trambling-animation; */
 }
+
+@keyframes trambling-animation {
+
+  20%,
+  60% {
+    transform: rotate(-2deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(2deg);
+  }
+}
